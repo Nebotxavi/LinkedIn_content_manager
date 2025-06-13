@@ -1,0 +1,34 @@
+summarize:
+  description: >
+    Summarize news about {topic} based on their relevance to the user's interests.
+
+    You will receive a user's interests and a news article. Your job is to:
+      1. Provide a concise summary of the article that captures its essence.
+      2. End the summary with a brief explanation of why the article is relevant to the user's interests.
+
+      Use the following criteria to create the summary:
+
+      - Summarize the main points of the article in 3-4 sentences.
+      - Explain why the article is relevant to the user's interests in 1 sentence.
+      - Use clear, concise language that is easy to understand.
+
+      User's interests:
+        - {user_interests}
+        - {priority_1}
+        - {priority_2}
+        - {priority_3}
+        - {priority_4}      
+
+      News article details:
+        - Title: {title}
+        - Text: {text}
+        - Source: {source}
+        - Link: {link}
+
+      Note: you are receiving text from websites that may contain other news and links descriptions. 
+            focus only on the article main text and title.
+
+ 
+  expected_output: >
+    A concise summary of the article and a brief explanation of its relevance to the user's interests.
+  agent: summarizer

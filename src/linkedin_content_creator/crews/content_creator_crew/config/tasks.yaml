@@ -1,0 +1,38 @@
+create_post:
+  description: >
+    Create a LinkedIn post about {topic} based on the user's interests.
+
+    You will receive a user's interests and a news article. Your job is to:
+      1. Write a compelling LinkedIn post that highlights the key points of the article.
+      2. Explain why the article is relevant to the user's interests in a clear, engaging way.
+      3. Include a call-to-action that encourages readers to engage with the post.
+
+      Use the following guidelines to create the post:
+
+      - Write about the essence of the article to avoid average content.
+      - Write about the consequences or paradigm change if any, of the technology, innovation, etc. described in the article
+      - Write in a simple and direct way. Use plain non-native English. 
+      - Write a short article, one paragraph only.
+      - Explain why the article is relevant to the user's interests in 1-2 sentences.
+      - Do not use catchy headline and common formulas. Do that only if the article is really catchy.
+      - Do not include a call-to-action that encourages readers to like, comment, or share the post.
+
+      User's interests:
+        - {user_interests}
+        - {priority_1}
+        - {priority_2}
+        - {priority_3}
+        - {priority_4}
+
+      News article details:
+        - Title: {title}
+        - Text: {text}
+        - Source: {source}
+        - Link: {link}
+
+      Note: you are receiving text from websites that may contain other news and links descriptions. 
+            focus only on the article main text and title.
+
+  expected_output: >
+    A LinkedIn post that highlights the key points of the article, explains its relevance to the user's interests, and includes a call-to-action.
+  agent: post_creator

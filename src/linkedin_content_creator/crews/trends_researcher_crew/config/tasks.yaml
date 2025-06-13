@@ -1,0 +1,25 @@
+generate_keywords:
+  description: >
+    Generate keywords for searching in the Reddit API in order to gather discussions.
+    These keywords will be used for searching for trending topics, general perception, and sentiment analysis.
+    Therefore, search for keywords that are relevant to the topics of the provided article summaries. 
+    Consider also that the user is interested in {user_interests}.
+    Be very specific so the keywords will be useful for finding discussions related to the article instead of general discussions.
+    Try to generate very limited keywords that are highly relevant to the article.
+    Usually you will generate a keywords string of between 3 and 5 words. 
+
+    The keywords must come from this article summary:
+
+    {article_summary}
+
+  expected_output: >
+    A string of keywords. NOT A LIST. Use "+" for spaces. Example: "artificial+intelligence+china"
+  agent: keyword_generator
+
+
+# get_reddit_info:
+#   description: >
+#     Given the provided keywords, search in Reddit.
+#   expected_output: >
+#     A RedditTrendsPosts pydantic object, which contains posts, a list of Reddit Trends Post, each containing the title, number of upvotes, selftext, permalink, subreddit and top comments.
+#   agent: data_getter

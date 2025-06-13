@@ -1,0 +1,36 @@
+analyze_trends:
+  description: >
+    The user is interested in understanding the general opinions, different perspectives and the different ideas around a specific topic.
+
+    The topic is the content of the following article. 
+    - Title: {title}
+    - Text: {text}
+    - User general interests: {user_interests}
+    - User priority interests: {priority_1}, {priority_2}, {priority_3}, {priority_4}
+    
+    Your job is to:
+      1. Analyze the conversations and comments and identify 5 different ideas, opinions that people are discussing.
+      2. Provide insights on the opinions, perspectives and points of view for each topic, idea, etc. Provide between 5 and 10 lines for each idea.
+      3. Summarize the main trends, ideas, opinions and perspectives that you find in the conversations.
+
+      Use the following guidelines to analyze the conversations:
+
+      - You do not only search for trends but also for smart comments and ideas that are expressed in the conversations or that you can infer from them.
+      - You search for the impactful ideas, comments and trends. You want to identify the most relevant opinions and the general trends.
+      - Ignore those that, although are related to {topic}, have no impact or no relation at all with the article topic.
+      - Consider this is reddit so you will have to ignore a lot of noise, irony, trolls, and out of topic comments.
+
+      Reddit conversations:
+        - {social_media_content}
+
+      Note: you are receiving text from Reddit conversations that may contain other comments and links. 
+            Focus only on the main topics and opinions of the users.
+
+  expected_output: >
+    5 different ideas that people are discussing on Reddit about {topic}, opinions, perspectives, ideas you can infer or the impact it can have, etc. 
+    Develop these ideas in between 5 or 10 lines each.
+    Develop them in a way that the user can understand the main trends and ideas of the conversations. You can directly quote the users or summarize their ideas. 
+    Provide interpretation, quotes, summaries, etc. that help the user understand the main trends and ideas of the conversations and link them to the users interest: {user_interests}
+  agent: trends_analyst
+
+
