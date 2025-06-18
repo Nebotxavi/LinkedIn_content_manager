@@ -1,8 +1,8 @@
 # LinkedIn Content Manager Agent System
 
-LinkedIn Content Manager was created to solve a simple problem: staying up to date about a topic like AI nowadays takes too much time. Scrolling for relevant news, filtering through noise, and specially identifying trending opinions takes too much.
+The LinkedIn Content Manager Agent System was created to solve a simple problem: staying up to date about a topic like AI nowadays takes too much time. Scrolling for relevant news, filtering through noise, and specially identifying trending opinions takes too much.
 
-This tool automates that process. It finds relevant news, summarizes key points, detects opinion trends from social platforms, and suggests potential post topics. It saves hours of manual work.
+This agents system automates that process. The agents find relevant news, summarize key points, detect opinion trends from social platforms, and suggest potential post topics. It saves hours of manual work.
 
 ## Disclaimer
 
